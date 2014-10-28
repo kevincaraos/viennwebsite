@@ -1,17 +1,22 @@
 @import url('css/fonts.css');
 
-img {
-       -ms-interpolation-mode: bicubic;
+img.sm-resize {
+    width: 90px;
 }
 
-span.pink {
-    color: #ec008c;
+.noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor:default;
 }
 
-span.cursive {
-        font-family: 'little_daysregular', cursive !important;
-}
+
 /* Get to know */
+
 
 .gettoknow-container {
     height: 500px;
@@ -20,7 +25,7 @@ span.cursive {
 }
 
 .gettoknow > p {
-    font-size: 90px;
+    font-size: 70px;
     font-family: 'bebas_neueregular', sans-serif;
     color: #FFF;
 
@@ -32,6 +37,14 @@ span.cursive {
     padding-top: 200px
 }
 
+
+span.pink {
+    color: #ec008c
+}
+
+span.cursive {
+        font-family: 'little_daysregular', cursive !important;
+}
 
 /* about */
 
@@ -49,7 +62,7 @@ span.cursive {
 }
 
 .about {
-    width: 1024px;
+    width: 700px;
     display: table;
     margin: 0 auto
 }
@@ -87,6 +100,7 @@ span.cursive {
 
 .video > iframe {
     margin: 0 auto;
+    width: 700px;
 }
 
 /* Contact */
@@ -108,11 +122,11 @@ span.cursive {
 }
 
 .contact-top {
-    padding-top: 50px
+    padding-top: 130px
 }
 
 .contact-top > p {
-    font-size: 40px;
+    font-size: 20px;
     font-family: 'bebas_neueregular', sans-serif;
     color: #000;
     text-align: center;
@@ -120,11 +134,11 @@ span.cursive {
 }
 
 .contact-bottom {
-    margin-top: -120px
+    margin-top: -60px
 }
 
 .contact-bottom > p {
-    font-size: 290px;
+    font-size: 140px;
     font-family: 'bebas_neueregular', sans-serif;
     color: #000;
     text-align: center;
@@ -147,21 +161,21 @@ span.cursive {
 /* feature */
 
 .feature-container {
-    margin-top: 70px;
-    height: 800px;
+    margin-top: 40px;
+    height: 500px;
     width: 100%;
     background-color: #dcdcdc;
 }
 
 .title > p {
-    font-size: 95px;
+    font-size: 60px;
     font-family: 'bebas_neueregular', sans-serif;
     color: #000;
     text-align: center;
 }
 
 .tagline > p {
-    font-size: 50px;
+    font-size: 30px;
     font-family: 'little_daysregular', cursive !important;
     color: #000;
     text-align: center;
@@ -172,7 +186,7 @@ span.cursive {
 .feature {
     margin: 0 auto;
     padding-top: 250px;
-    width: 560px;
+    width: 700px;
 }
 
 /* social media */
@@ -187,13 +201,14 @@ span.cursive {
 .socialmedia {
     display: table;
     margin: 0 auto;
+
 }
 
 
 .socialmedia ul li {
     display: inline-block;
-    padding-right: 120px;
-    padding-top: 70px ;
+    padding-right: 20px;
+    padding-top: 80px ;
 }
 
 .socialmedia ul {
@@ -204,45 +219,76 @@ span.cursive {
     padding-right:0px;
 }​
 
+
+
 .full-width {
     width: 100%;
     margin: 0 auto;
 }
 
 /* Navbar */
-.nav-brand {
-    display:none;
-}
+
 .navbar-fixed-top {
     width: 100%;
-    height: 70px;
+    height: 40px;
     position: fixed;
     background-color: #000;
+    position: relative;
+}
 
+.nav-menu > ul li {
+    display: none;
+    width: 180px;
+    float: center;
+    padding: 10px;
+    background-color: #000;
+}
 
+.nav-menu:hover  li{
+    display: block;
+}
+
+.nav-menu:active li {
+    display: block;
 }
 
 .nav-menu {
     display: table;
-    margin: 20px auto;
-    padding-top: 0px;
+    margin: -40px auto 0;
+    width: 100%;
+    height: 80px;
+    z-index: 10;
+    position: absolute;
 
 }
 
 .nav-menu ul {
       padding-left: 0;
+      margin: 35px auto 0;
 }
 
-.nav-menu > ul li a {
+.nav-brand {
+    margin: 0 auto;
+    margin-top: 5px; 
+    z-index: 0;
+    position: relative;
+    display: block;
+
+}
+
+.nav-brand > p {
     font-family: 'bebas_neueregular', sans-serif;
     font-size: 20px;
     color: #FFF;
     text-align: center;
 }
 
-.nav-menu > ul li {
-    display: inline-block;
-    padding-right: 60px;
+
+.nav-menu > ul li a {
+    font-family: 'bebas_neueregular', sans-serif;
+    font-size: 20px;
+    color: #FFF;
+    text-align: center;
 }
 
 
